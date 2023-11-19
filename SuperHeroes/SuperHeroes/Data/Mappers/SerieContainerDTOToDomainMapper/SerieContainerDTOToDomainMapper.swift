@@ -11,7 +11,7 @@ struct SerieContainerDTOToDomainMapper: SerieContainerDTOToDomainMapperProtocol 
         ModelDataContainer(
             offset: modelDTO?.offset ?? 0,
             limit: modelDTO?.limit ?? 0,
-            total: modelDTO?.limit ?? 0,
+            total: modelDTO?.total ?? 0,
             count: modelDTO?.count ?? 0,
             results: map(modelDTO?.results) ?? []
         )
@@ -24,10 +24,10 @@ struct SerieContainerDTOToDomainMapper: SerieContainerDTOToDomainMapperProtocol 
                 id: (serieDTO.id != nil) ? String(serieDTO.id ?? 0) : UUID().uuidString,
                 title: serieDTO.title ?? "No name",
                 description: serieDTO.description ?? "",
-                startYear: nil,
-                endYear: nil,
-                rating: nil,
-                type: nil,
+                startYear: serieDTO.startYear,
+                endYear: serieDTO.endYear,
+                rating: serieDTO.rating,
+                type: serieDTO.type,
                 modified: serieDTO.modified,
                 thumbnail: thumbnailImageDTOToStringMapper.map(serieDTO.thumbnail)
             )
