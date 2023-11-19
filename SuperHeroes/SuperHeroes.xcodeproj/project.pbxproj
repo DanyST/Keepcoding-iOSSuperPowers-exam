@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		76ED94732B0963680092D042 /* SuperHeroesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94722B0963680092D042 /* SuperHeroesApp.swift */; };
-		76ED94752B0963680092D042 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94742B0963680092D042 /* ContentView.swift */; };
 		76ED94772B0963690092D042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76ED94762B0963690092D042 /* Assets.xcassets */; };
 		76ED947B2B0963690092D042 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76ED947A2B0963690092D042 /* Preview Assets.xcassets */; };
 		76ED94852B09636A0092D042 /* SuperHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94842B09636A0092D042 /* SuperHeroesTests.swift */; };
@@ -65,7 +64,6 @@
 /* Begin PBXFileReference section */
 		76ED946F2B0963680092D042 /* SuperHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76ED94722B0963680092D042 /* SuperHeroesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesApp.swift; sourceTree = "<group>"; };
-		76ED94742B0963680092D042 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76ED94762B0963690092D042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76ED94782B0963690092D042 /* SuperHeroes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SuperHeroes.entitlements; sourceTree = "<group>"; };
 		76ED947A2B0963690092D042 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			children = (
 				76ED94722B0963680092D042 /* SuperHeroesApp.swift */,
 				76ED94762B0963690092D042 /* Assets.xcassets */,
-				76ED94742B0963680092D042 /* ContentView.swift */,
 				76ED94C82B09AC110092D042 /* Commons */,
 				76ED949D2B096A670092D042 /* Data */,
 				76ED94C02B09A4420092D042 /* Domain */,
@@ -492,7 +489,6 @@
 				76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */,
 				76ED94B32B0970F60092D042 /* SuperHeroesEndpoint.swift in Sources */,
 				76ED94B02B0970A80092D042 /* NetworkProviderProtocol.swift in Sources */,
-				76ED94752B0963680092D042 /* ContentView.swift in Sources */,
 				76ED94A82B096EE40092D042 /* ExtensionImage.swift in Sources */,
 				76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */,
 				76ED94A02B096BB20092D042 /* ModelDataWrapperDTO.swift in Sources */,
