@@ -1,7 +1,7 @@
 import Foundation
 
 struct Serie {
-    let id: Int
+    let id: String
     let title: String
     let description: String
     let startYear: Int?
