@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-struct CharacterNetwork: CharacterNetworkProtocol {
+struct HeroesNetwork: HeroesNetworkProtocol {
     private let networkProvider: NetworkProviderProtocol
     private let heroContainerDTOToDomainMapper: HeroContainerDTOToDomainMapper
     
@@ -13,7 +13,7 @@ struct CharacterNetwork: CharacterNetworkProtocol {
         self.heroContainerDTOToDomainMapper = heroContainerDTOToDomainMapper
     }
         
-    func getCharacters() -> AnyPublisher<ModelDataContainer<Hero>, ApiError> {
+    func getHeroes() -> AnyPublisher<ModelDataContainer<Hero>, ApiError> {
         let params: [String: Any] = [
             "apikey": ApiConfig.apikey,
             "hash": ApiConfig.hash,
