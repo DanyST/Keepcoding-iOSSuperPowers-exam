@@ -1,10 +1,13 @@
 import Foundation
 
-struct HeroContainerDTOToDomainMapper: ModelDTOToDomainMapper {
-    typealias ModelDTO = ModelDataContainerDTO<HeroDTO>
-    typealias ModelDomain = ModelDataContainer<Hero>
+struct HeroContainerDTOToDomainMapper: HeroContainerDTOToDomainMapperProtocol {
+    private var thumbnailImageDTOToStringMapper = ThumbnailImageDTOToStringMapper()
     
-    func map(_ modelDTO: ModelDTO?) -> ModelDomain {
+    init(thumbnailImageDTOToStringMapper: ThumbnailImageDTOToStringMapper = ThumbnailImageDTOToStringMapper()) {
+        self.thumbnailImageDTOToStringMapper = thumbnailImageDTOToStringMapper
+    }
+    
+    func map(_ modelDTO: ModelDataContainerDTO<HeroDTO>?) -> ModelDataContainer<Hero> {
         ModelDataContainer(
             offset: modelDTO?.offset ?? 0,
             limit: modelDTO?.limit ?? 0,
@@ -22,20 +25,8 @@ struct HeroContainerDTOToDomainMapper: ModelDTOToDomainMapper {
                 name: heroDTO.name ?? "No name",
                 description: heroDTO.description ?? "",
                 modified: heroDTO.modified,
-                thumbnail: map(heroDTO.thumbnail)
+                thumbnail: thumbnailImageDTOToStringMapper.map(heroDTO.thumbnail)
             )
         }
-    }
-    
-    private func map(_ thumbnailImageDTO: ThumbnailImageDTO?) -> String? {
-        guard
-            let path = thumbnailImageDTO?.path,
-            let extensionImage = thumbnailImageDTO?.thumbnailExtension
-        else {
-            return nil
-        }
-        
-        let securePath = path.replacingOccurrences(of: "http", with: "https")
-        return "\(securePath).\(extensionImage.rawValue)"
     }
 }
