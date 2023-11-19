@@ -35,6 +35,10 @@
 		76ED94D02B09B3130092D042 /* HeroesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94CF2B09B3130092D042 /* HeroesRepositoryProtocol.swift */; };
 		76ED94D22B09B3C20092D042 /* GetHeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94D12B09B3C20092D042 /* GetHeroesUseCase.swift */; };
 		76ED94D52B09B3E60092D042 /* GetHeroesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94D42B09B3E60092D042 /* GetHeroesUseCaseProtocol.swift */; };
+		76ED94D92B09B7E80092D042 /* HeroListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94D82B09B7E80092D042 /* HeroListViewModel.swift */; };
+		76ED94DC2B09B98F0092D042 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DB2B09B98F0092D042 /* Status.swift */; };
+		76ED94DE2B09BBAE0092D042 /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DD2B09BBAE0092D042 /* HeroListView.swift */; };
+		76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,10 @@
 		76ED94CF2B09B3130092D042 /* HeroesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		76ED94D12B09B3C20092D042 /* GetHeroesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroesUseCase.swift; sourceTree = "<group>"; };
 		76ED94D42B09B3E60092D042 /* GetHeroesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroesUseCaseProtocol.swift; sourceTree = "<group>"; };
+		76ED94D82B09B7E80092D042 /* HeroListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewModel.swift; sourceTree = "<group>"; };
+		76ED94DB2B09B98F0092D042 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		76ED94DD2B09BBAE0092D042 /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
+		76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroesUIPreviewUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +145,13 @@
 		76ED94712B0963680092D042 /* SuperHeroes */ = {
 			isa = PBXGroup;
 			children = (
-				76ED94C82B09AC110092D042 /* Commons */,
 				76ED94722B0963680092D042 /* SuperHeroesApp.swift */,
 				76ED94762B0963690092D042 /* Assets.xcassets */,
 				76ED94742B0963680092D042 /* ContentView.swift */,
+				76ED94C82B09AC110092D042 /* Commons */,
 				76ED949D2B096A670092D042 /* Data */,
 				76ED94C02B09A4420092D042 /* Domain */,
+				76ED94D62B09B6940092D042 /* Presentation */,
 				76ED94782B0963690092D042 /* SuperHeroes.entitlements */,
 				76ED94792B0963690092D042 /* Preview Content */,
 			);
@@ -258,6 +267,7 @@
 			children = (
 				76ED94C22B09A47C0092D042 /* ModelDataContainer.swift */,
 				76ED94C42B09A4A80092D042 /* Hero.swift */,
+				76ED94DB2B09B98F0092D042 /* Status.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,9 +301,27 @@
 			isa = PBXGroup;
 			children = (
 				76ED94D12B09B3C20092D042 /* GetHeroesUseCase.swift */,
+				76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */,
 				76ED94D42B09B3E60092D042 /* GetHeroesUseCaseProtocol.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		76ED94D62B09B6940092D042 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94D72B09B69B0092D042 /* HeroList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		76ED94D72B09B69B0092D042 /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94D82B09B7E80092D042 /* HeroListViewModel.swift */,
+				76ED94DD2B09BBAE0092D042 /* HeroListView.swift */,
+			);
+			path = HeroList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76ED94AB2B096F7E0092D042 /* HeroesNetwork.swift in Sources */,
+				76ED94DC2B09B98F0092D042 /* Status.swift in Sources */,
 				76ED94A42B096EBD0092D042 /* HeroDTO.swift in Sources */,
 				76ED94AE2B0970860092D042 /* NetworkProvider.swift in Sources */,
 				76ED94C52B09A4A80092D042 /* Hero.swift in Sources */,
@@ -434,7 +463,9 @@
 				76ED94B02B0970A80092D042 /* NetworkProviderProtocol.swift in Sources */,
 				76ED94752B0963680092D042 /* ContentView.swift in Sources */,
 				76ED94A82B096EE40092D042 /* ExtensionImage.swift in Sources */,
+				76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */,
 				76ED94A02B096BB20092D042 /* ModelDataWrapperDTO.swift in Sources */,
+				76ED94DE2B09BBAE0092D042 /* HeroListView.swift in Sources */,
 				76ED94B52B09712C0092D042 /* HTTPMethod.swift in Sources */,
 				76ED94CB2B09AC210092D042 /* ModelDTOToDomainMapper.swift in Sources */,
 				76ED94732B0963680092D042 /* SuperHeroesApp.swift in Sources */,
@@ -442,6 +473,7 @@
 				76ED94C32B09A47C0092D042 /* ModelDataContainer.swift in Sources */,
 				76ED94D52B09B3E60092D042 /* GetHeroesUseCaseProtocol.swift in Sources */,
 				76ED94B72B09714D0092D042 /* ApiError.swift in Sources */,
+				76ED94D92B09B7E80092D042 /* HeroListViewModel.swift in Sources */,
 				76ED94CE2B09B24F0092D042 /* HeroesRepository.swift in Sources */,
 				76ED94D22B09B3C20092D042 /* GetHeroesUseCase.swift in Sources */,
 				76ED94BA2B09961A0092D042 /* ApiConfig.swift in Sources */,
