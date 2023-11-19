@@ -11,7 +11,7 @@ struct HeroContainerDTOToDomainMapper: HeroContainerDTOToDomainMapperProtocol {
         ModelDataContainer(
             offset: modelDTO?.offset ?? 0,
             limit: modelDTO?.limit ?? 0,
-            total: modelDTO?.limit ?? 0,
+            total: modelDTO?.total ?? 0,
             count: modelDTO?.count ?? 0,
             results: map(modelDTO?.results) ?? []
         )
