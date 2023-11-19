@@ -11,4 +11,8 @@ struct HeroesRepository: HeroesRepositoryProtocol {
     func getHeroes() -> AnyPublisher<ModelDataContainer<Hero>, ApiError> {
         network.getHeroes()
     }
+    
+    func getSeries(by heroId: String) -> AnyPublisher<ModelDataContainer<Serie>, ApiError> {
+        network.getSeries(by: heroId)
+    }
 }
