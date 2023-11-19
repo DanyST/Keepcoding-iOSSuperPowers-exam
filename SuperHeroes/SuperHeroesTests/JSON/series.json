@@ -1,0 +1,201 @@
+{
+    "code": 200,
+    "status": "Ok",
+    "copyright": "© 2023 MARVEL",
+    "attributionText": "Data provided by Marvel. © 2023 MARVEL",
+    "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2023 MARVEL</a>",
+    "etag": "fc36e9c5013c988762786e5c1419befd61734bbb",
+    "data": {
+        "offset": 2,
+        "limit": 20,
+        "total": 3,
+        "count": 1,
+        "results": [
+            {
+                "id": 1614,
+                "title": "HOUSE OF M: WORLD OF M FEATURING WOLVERINE TPB (2006)",
+                "description": null,
+                "resourceURI": "http://gateway.marvel.com/v1/public/series/1614",
+                "urls": [
+                    {
+                        "type": "detail",
+                        "url": "http://marvel.com/comics/series/1614/house_of_m_world_of_m_featuring_wolverine_tpb_2006?utm_campaign=apiRef&utm_source=73ff8eb710cf15b779be1d18413f9e92"
+                    }
+                ],
+                "startYear": 2006,
+                "endYear": 2006,
+                "rating": "T",
+                "type": "collection",
+                "modified": "-0001-11-30T00:00:00-0500",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/4bc62e83db473",
+                    "extension": "jpg"
+                },
+                "creators": {
+                    "available": 6,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1614/creators",
+                    "items": [
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/creators/367",
+                            "name": "Ed Brubaker",
+                            "role": "writer"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/creators/889",
+                            "name": "Jesse Delperdang",
+                            "role": "inker"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/creators/708",
+                            "name": "Mike Perkins",
+                            "role": "inker"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/creators/8635",
+                            "name": "Vc Randy Gentile",
+                            "role": "letterer"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/creators/6146",
+                            "name": "Avalon Studios",
+                            "role": "colorist"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/creators/8991",
+                            "name": "Lee Weeks",
+                            "role": "penciler"
+                        }
+                    ],
+                    "returned": 6
+                },
+                "characters": {
+                    "available": 11,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1614/characters",
+                    "items": [
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009170",
+                            "name": "Baron Zemo (Heinrich Zemo)"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009187",
+                            "name": "Black Panther"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+                            "name": "Captain America"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010914",
+                            "name": "Captain America (House of M)"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009268",
+                            "name": "Deadpool"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009356",
+                            "name": "Human Torch"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009368",
+                            "name": "Iron Man"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010945",
+                            "name": "Magneto (House of M)"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010791",
+                            "name": "Sub-Mariner"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011309",
+                            "name": "Toro (Thomas Raymond)"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+                            "name": "Wolverine"
+                        }
+                    ],
+                    "returned": 11
+                },
+                "stories": {
+                    "available": 9,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1614/stories",
+                    "items": [
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/2209",
+                            "name": "1 of 3 - House of M",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/2211",
+                            "name": "2 of 3 - House of M",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/2213",
+                            "name": "3 of 3 - House of M",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/2352",
+                            "name": "1 of 1 - House of M Tie-In",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/2494",
+                            "name": "3 of 4 - Enema of the State",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/3825",
+                            "name": "1 of 1- House of M",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/3889",
+                            "name": "5 of 6 - Reflections",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/4246",
+                            "name": "House of M tie-in",
+                            "type": "interiorStory"
+                        },
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/stories/65954",
+                            "name": "HOUSE OF M: WORLD OF M 0 cover",
+                            "type": "cover"
+                        }
+                    ],
+                    "returned": 9
+                },
+                "comics": {
+                    "available": 1,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1614/comics",
+                    "items": [
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/comics/3512",
+                            "name": "HOUSE OF M: WORLD OF M FEATURING WOLVERINE TPB (Trade Paperback)"
+                        }
+                    ],
+                    "returned": 1
+                },
+                "events": {
+                    "available": 1,
+                    "collectionURI": "http://gateway.marvel.com/v1/public/series/1614/events",
+                    "items": [
+                        {
+                            "resourceURI": "http://gateway.marvel.com/v1/public/events/251",
+                            "name": "House of M"
+                        }
+                    ],
+                    "returned": 1
+                },
+                "next": null,
+                "previous": null
+            }
+        ]
+    }
+}
