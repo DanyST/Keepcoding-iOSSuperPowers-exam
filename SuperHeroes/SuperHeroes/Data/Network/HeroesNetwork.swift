@@ -28,6 +28,7 @@ struct HeroesNetwork: HeroesNetworkProtocol {
         .map {modelDataWrapperDTO in
             self.heroContainerDTOToDomainMapper.map(modelDataWrapperDTO.data)
         }
+        .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
     }
 }
