@@ -7,3 +7,5 @@ struct Hero {
     let modified: String?
     let thumbnail: String?
 }
+
+extension Hero: Identifiable {}
