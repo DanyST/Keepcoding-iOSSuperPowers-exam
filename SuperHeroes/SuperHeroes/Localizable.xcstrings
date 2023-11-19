@@ -1,0 +1,22 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Marvel Heroes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marvel Heroes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heroes Marvel"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

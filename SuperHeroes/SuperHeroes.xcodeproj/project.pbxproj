@@ -40,6 +40,7 @@
 		76ED94DE2B09BBAE0092D042 /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DD2B09BBAE0092D042 /* HeroListView.swift */; };
 		76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */; };
 		76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E12B0A7F470092D042 /* HeroRowView.swift */; };
+		76ED94E42B0A85000092D042 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 76ED94E32B0A85000092D042 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		76ED94DD2B09BBAE0092D042 /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
 		76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroesUIPreviewUseCase.swift; sourceTree = "<group>"; };
 		76ED94E12B0A7F470092D042 /* HeroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowView.swift; sourceTree = "<group>"; };
+		76ED94E32B0A85000092D042 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				76ED94D62B09B6940092D042 /* Presentation */,
 				76ED94782B0963690092D042 /* SuperHeroes.entitlements */,
 				76ED94792B0963690092D042 /* Preview Content */,
+				76ED94E32B0A85000092D042 /* Localizable.xcstrings */,
 			);
 			path = SuperHeroes;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 76ED94662B0963680092D042;
 			productRefGroup = 76ED94702B0963680092D042 /* Products */;
@@ -433,6 +437,7 @@
 			files = (
 				76ED947B2B0963690092D042 /* Preview Assets.xcassets in Resources */,
 				76ED94772B0963690092D042 /* Assets.xcassets in Resources */,
+				76ED94E42B0A85000092D042 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
