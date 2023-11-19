@@ -9,7 +9,8 @@ struct ThumbnailImageDTOToStringMapper: ThumbnailImageDTOToStringMapperProtocol 
             return nil
         }
         
-        let securePath = path.replacingOccurrences(of: "http", with: "https")
-        return "\(securePath).\(extensionImage.rawValue)"
+        var urlComponents = URLComponents(string: "\(path).\(extensionImage.rawValue)")
+        urlComponents?.scheme = "https"
+        return urlComponents?.string
     }
 }
