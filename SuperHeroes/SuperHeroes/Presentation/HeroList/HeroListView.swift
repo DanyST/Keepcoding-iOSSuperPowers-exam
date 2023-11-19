@@ -1,14 +1,26 @@
 import SwiftUI
 
 struct HeroListView: View {
-    private let viewModel: HeroListViewModel
+    @StateObject private var viewModel: HeroListViewModel
     
     init(viewModel: HeroListViewModel) {
-        self.viewModel = viewModel
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
-        Text("Hello, World!")
+        NavigationStack {
+            List {
+                ForEach(viewModel.heroes) { hero in
+                    HeroRowView(hero: hero)
+                        .frame(height: UIScreen.main.bounds.width * 0.7)
+                }
+                .listRowSeparator(.hidden)
+                
+            }
+            .scrollIndicators(.hidden)
+            .navigationTitle("Marvel Heroes")
+            .listStyle(.plain)
+        }
     }
 }
 
