@@ -13,6 +13,10 @@ final class HeroListViewModel: ObservableObject {
         getHeroes()
     }
     
+    func heroDetailViewModel(hero: Hero) -> HeroDetailViewModel {
+        HeroDetailViewModel(hero: hero)
+    }
+    
     func getHeroes() {
         status = .loading
         
