@@ -11,3 +11,5 @@ struct Serie {
     let modified: String?
     let thumbnail: String?
 }
+
+extension Serie: Identifiable {}
