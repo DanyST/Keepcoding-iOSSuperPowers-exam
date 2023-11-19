@@ -26,4 +26,5 @@ struct HeroListView: View {
 
 #Preview {
     HeroListView(viewModel: HeroListViewModel(getHeroesUseCase: GetHeroesUIPreviewUseCase()))
+        .environment(\.locale, .init(identifier: "es")) // es, en
 }
