@@ -50,6 +50,7 @@
 		76ED94F62B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94F52B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift */; };
 		76ED94FD2B0A9E550092D042 /* GetSeriesByHeroUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94FC2B0A9E540092D042 /* GetSeriesByHeroUseCase.swift */; };
 		76ED94FF2B0A9E9C0092D042 /* GetSeriesByHeroUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94FE2B0A9E9C0092D042 /* GetSeriesByHeroUseCaseProtocol.swift */; };
+		76ED95012B0A9EDE0092D042 /* GetSeriesByHeroUIPreviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED95002B0A9EDE0092D042 /* GetSeriesByHeroUIPreviewUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		76ED94F52B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieContainerDTOToDomainMapperProtocol.swift; sourceTree = "<group>"; };
 		76ED94FC2B0A9E540092D042 /* GetSeriesByHeroUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByHeroUseCase.swift; sourceTree = "<group>"; };
 		76ED94FE2B0A9E9C0092D042 /* GetSeriesByHeroUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByHeroUseCaseProtocol.swift; sourceTree = "<group>"; };
+		76ED95002B0A9EDE0092D042 /* GetSeriesByHeroUIPreviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSeriesByHeroUIPreviewUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				76ED94FC2B0A9E540092D042 /* GetSeriesByHeroUseCase.swift */,
+				76ED95002B0A9EDE0092D042 /* GetSeriesByHeroUIPreviewUseCase.swift */,
 				76ED94FE2B0A9E9C0092D042 /* GetSeriesByHeroUseCaseProtocol.swift */,
 			);
 			path = GetSeriesByHeroUseCase;
@@ -552,6 +555,7 @@
 				76ED94AE2B0970860092D042 /* NetworkProvider.swift in Sources */,
 				76ED94C52B09A4A80092D042 /* Hero.swift in Sources */,
 				76ED94EE2B0A90A50092D042 /* SerieContainerDTOToDomainMapper.swift in Sources */,
+				76ED95012B0A9EDE0092D042 /* GetSeriesByHeroUIPreviewUseCase.swift in Sources */,
 				76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */,
 				76ED94B32B0970F60092D042 /* SuperHeroesEndpoint.swift in Sources */,
 				76ED94B02B0970A80092D042 /* NetworkProviderProtocol.swift in Sources */,
