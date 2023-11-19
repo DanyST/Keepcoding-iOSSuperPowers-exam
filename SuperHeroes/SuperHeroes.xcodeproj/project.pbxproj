@@ -39,6 +39,7 @@
 		76ED94DC2B09B98F0092D042 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DB2B09B98F0092D042 /* Status.swift */; };
 		76ED94DE2B09BBAE0092D042 /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DD2B09BBAE0092D042 /* HeroListView.swift */; };
 		76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */; };
+		76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E12B0A7F470092D042 /* HeroRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		76ED94DB2B09B98F0092D042 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		76ED94DD2B09BBAE0092D042 /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
 		76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroesUIPreviewUseCase.swift; sourceTree = "<group>"; };
+		76ED94E12B0A7F470092D042 /* HeroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +322,7 @@
 			children = (
 				76ED94D82B09B7E80092D042 /* HeroListViewModel.swift */,
 				76ED94DD2B09BBAE0092D042 /* HeroListView.swift */,
+				76ED94E12B0A7F470092D042 /* HeroRowView.swift */,
 			);
 			path = HeroList;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				76ED94A42B096EBD0092D042 /* HeroDTO.swift in Sources */,
 				76ED94AE2B0970860092D042 /* NetworkProvider.swift in Sources */,
 				76ED94C52B09A4A80092D042 /* Hero.swift in Sources */,
+				76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */,
 				76ED94B32B0970F60092D042 /* SuperHeroesEndpoint.swift in Sources */,
 				76ED94B02B0970A80092D042 /* NetworkProviderProtocol.swift in Sources */,
 				76ED94752B0963680092D042 /* ContentView.swift in Sources */,
