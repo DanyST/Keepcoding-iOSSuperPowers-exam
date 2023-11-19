@@ -4,7 +4,7 @@ import SwiftUI
 struct SuperHeroesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HeroListView(viewModel: HeroListViewModel())
         }
     }
 }
