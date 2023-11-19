@@ -2,6 +2,12 @@ import SwiftUI
 
 struct HeroRowView: View {
     let hero: Hero
+    let cornerRadius: CGFloat
+    
+    init(hero: Hero, cornerRadius: CGFloat = 20.0) {
+        self.hero = hero
+        self.cornerRadius = cornerRadius
+    }
     
     var body: some View {
         ZStack {
@@ -9,19 +15,19 @@ struct HeroRowView: View {
                 image
                     .resizable()
                     .frame(maxWidth: .infinity)
-                    .cornerRadius(20.0)
+                    .cornerRadius(cornerRadius)
             } placeholder: {
                 Rectangle()
                     .foregroundColor(.gray)
                     .frame(maxWidth: .infinity)
-                    .cornerRadius(20.0)
+                    .cornerRadius(cornerRadius)
             }
             
             Rectangle()
                 .frame(maxWidth: .infinity)
                 .background(.black)
                 .opacity(0.15)
-                .cornerRadius(20.0)
+                .cornerRadius(cornerRadius)
             
             VStack {
                 Spacer()
