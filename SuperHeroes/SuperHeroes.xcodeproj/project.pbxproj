@@ -42,6 +42,12 @@
 		76ED94E42B0A85000092D042 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 76ED94E32B0A85000092D042 /* Localizable.xcstrings */; };
 		76ED94E72B0A88E90092D042 /* SerieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E62B0A88E90092D042 /* SerieDTO.swift */; };
 		76ED94EA2B0A8EAA0092D042 /* ApiConfig+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E92B0A8EAA0092D042 /* ApiConfig+Dictionary.swift */; };
+		76ED94EC2B0A900B0092D042 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94EB2B0A900B0092D042 /* Serie.swift */; };
+		76ED94EE2B0A90A50092D042 /* SerieContainerDTOToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94ED2B0A90A50092D042 /* SerieContainerDTOToDomainMapper.swift */; };
+		76ED94F02B0A91CB0092D042 /* ThumbnailImageDTOToStringMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94EF2B0A91CB0092D042 /* ThumbnailImageDTOToStringMapper.swift */; };
+		76ED94F22B0A9A540092D042 /* HeroContainerDTOToDomainMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94F12B0A9A540092D042 /* HeroContainerDTOToDomainMapperProtocol.swift */; };
+		76ED94F42B0A9ADE0092D042 /* ThumbnailImageDTOToStringMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94F32B0A9ADE0092D042 /* ThumbnailImageDTOToStringMapperProtocol.swift */; };
+		76ED94F62B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94F52B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,12 @@
 		76ED94E32B0A85000092D042 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		76ED94E62B0A88E90092D042 /* SerieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieDTO.swift; sourceTree = "<group>"; };
 		76ED94E92B0A8EAA0092D042 /* ApiConfig+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiConfig+Dictionary.swift"; sourceTree = "<group>"; };
+		76ED94EB2B0A900B0092D042 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		76ED94ED2B0A90A50092D042 /* SerieContainerDTOToDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieContainerDTOToDomainMapper.swift; sourceTree = "<group>"; };
+		76ED94EF2B0A91CB0092D042 /* ThumbnailImageDTOToStringMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImageDTOToStringMapper.swift; sourceTree = "<group>"; };
+		76ED94F12B0A9A540092D042 /* HeroContainerDTOToDomainMapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroContainerDTOToDomainMapperProtocol.swift; sourceTree = "<group>"; };
+		76ED94F32B0A9ADE0092D042 /* ThumbnailImageDTOToStringMapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImageDTOToStringMapperProtocol.swift; sourceTree = "<group>"; };
+		76ED94F52B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieContainerDTOToDomainMapperProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,7 +266,9 @@
 		76ED94BD2B09A2A40092D042 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
-				76ED94BE2B09A30B0092D042 /* HeroContainerDTOToDomainMapper.swift */,
+				76ED94F72B0A9BB90092D042 /* HeroContainerDTOToDomainMapper */,
+				76ED94F82B0A9BC50092D042 /* SerieContainerDTOToDomainMapper */,
+				76ED94F92B0A9BCC0092D042 /* ThumbnailImageDTOToStringMapper */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -273,6 +287,7 @@
 			children = (
 				76ED94C22B09A47C0092D042 /* ModelDataContainer.swift */,
 				76ED94C42B09A4A80092D042 /* Hero.swift */,
+				76ED94EB2B0A900B0092D042 /* Serie.swift */,
 				76ED94DB2B09B98F0092D042 /* Status.swift */,
 			);
 			path = Models;
@@ -347,6 +362,33 @@
 				76ED94E92B0A8EAA0092D042 /* ApiConfig+Dictionary.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		76ED94F72B0A9BB90092D042 /* HeroContainerDTOToDomainMapper */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94BE2B09A30B0092D042 /* HeroContainerDTOToDomainMapper.swift */,
+				76ED94F12B0A9A540092D042 /* HeroContainerDTOToDomainMapperProtocol.swift */,
+			);
+			path = HeroContainerDTOToDomainMapper;
+			sourceTree = "<group>";
+		};
+		76ED94F82B0A9BC50092D042 /* SerieContainerDTOToDomainMapper */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94ED2B0A90A50092D042 /* SerieContainerDTOToDomainMapper.swift */,
+				76ED94F52B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift */,
+			);
+			path = SerieContainerDTOToDomainMapper;
+			sourceTree = "<group>";
+		};
+		76ED94F92B0A9BCC0092D042 /* ThumbnailImageDTOToStringMapper */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94EF2B0A91CB0092D042 /* ThumbnailImageDTOToStringMapper.swift */,
+				76ED94F32B0A9ADE0092D042 /* ThumbnailImageDTOToStringMapperProtocol.swift */,
+			);
+			path = ThumbnailImageDTOToStringMapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,18 +525,22 @@
 			files = (
 				76ED94AB2B096F7E0092D042 /* HeroesNetwork.swift in Sources */,
 				76ED94DC2B09B98F0092D042 /* Status.swift in Sources */,
+				76ED94F02B0A91CB0092D042 /* ThumbnailImageDTOToStringMapper.swift in Sources */,
 				76ED94A42B096EBD0092D042 /* HeroDTO.swift in Sources */,
 				76ED94AE2B0970860092D042 /* NetworkProvider.swift in Sources */,
 				76ED94C52B09A4A80092D042 /* Hero.swift in Sources */,
+				76ED94EE2B0A90A50092D042 /* SerieContainerDTOToDomainMapper.swift in Sources */,
 				76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */,
 				76ED94B32B0970F60092D042 /* SuperHeroesEndpoint.swift in Sources */,
 				76ED94B02B0970A80092D042 /* NetworkProviderProtocol.swift in Sources */,
+				76ED94F22B0A9A540092D042 /* HeroContainerDTOToDomainMapperProtocol.swift in Sources */,
 				76ED94A82B096EE40092D042 /* ExtensionImage.swift in Sources */,
 				76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */,
 				76ED94A02B096BB20092D042 /* ModelDataWrapperDTO.swift in Sources */,
 				76ED94EA2B0A8EAA0092D042 /* ApiConfig+Dictionary.swift in Sources */,
 				76ED94DE2B09BBAE0092D042 /* HeroListView.swift in Sources */,
 				76ED94B52B09712C0092D042 /* HTTPMethod.swift in Sources */,
+				76ED94EC2B0A900B0092D042 /* Serie.swift in Sources */,
 				76ED94CB2B09AC210092D042 /* ModelDTOToDomainMapper.swift in Sources */,
 				76ED94732B0963680092D042 /* SuperHeroesApp.swift in Sources */,
 				76ED94A62B096ED00092D042 /* ThumbnailImageDTO.swift in Sources */,
@@ -506,10 +552,12 @@
 				76ED94CE2B09B24F0092D042 /* HeroesRepository.swift in Sources */,
 				76ED94D22B09B3C20092D042 /* GetHeroesUseCase.swift in Sources */,
 				76ED94BA2B09961A0092D042 /* ApiConfig.swift in Sources */,
+				76ED94F42B0A9ADE0092D042 /* ThumbnailImageDTOToStringMapperProtocol.swift in Sources */,
 				76ED94A22B096EAD0092D042 /* ModelDataContainerDTO.swift in Sources */,
 				76ED94BF2B09A30B0092D042 /* HeroContainerDTOToDomainMapper.swift in Sources */,
 				76ED94BC2B09A1300092D042 /* HeroesNetworkProtocol.swift in Sources */,
 				76ED94D02B09B3130092D042 /* HeroesRepositoryProtocol.swift in Sources */,
+				76ED94F62B0A9AE30092D042 /* SerieContainerDTOToDomainMapperProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
