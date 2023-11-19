@@ -2,5 +2,5 @@ import Foundation
 import Combine
 
 protocol CharacterNetworkProtocol {
-    func getCharacters() -> AnyPublisher<ModelDataWrapperDTO<HeroDTO>, ApiError>
+    func getCharacters() -> AnyPublisher<ModelDataContainer<Hero>, ApiError>
 }
