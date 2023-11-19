@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-final class NetworkProvider {
+struct NetworkProvider {
     private let baseUrl = URL(string: "https://gateway.marvel.com/v1/public")
 }
 
