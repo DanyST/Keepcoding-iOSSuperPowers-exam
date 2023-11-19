@@ -3,30 +3,30 @@ import Foundation
 typealias EndpointParameters = [String: Any?]
 
 enum SuperHeroesEndpoint {
-    case characters(params: EndpointParameters)
-    case series(characterId: String, additionalParams: EndpointParameters)
+    case heroes(params: EndpointParameters)
+    case series(heroId: String, additionalParams: EndpointParameters)
 }
 
 extension SuperHeroesEndpoint {
     var method: HTTPMethod {
         switch self {
-        case .characters, .series:
+        case .heroes, .series:
             return .get
         }
     }
     
     var path: String {
         switch self {
-        case .characters:
+        case .heroes:
             return "/characters"
-        case let .series(characterId, _):
-            return "/characters/\(characterId)/series"
+        case let .series(heroId, _):
+            return "/characters/\(heroId)/series"
         }
     }
     
     var parameters: EndpointParameters {
         switch self {
-        case let .characters(params), let .series(_, params):
+        case let .heroes(params), let .series(_, params):
             return params
         }
     }

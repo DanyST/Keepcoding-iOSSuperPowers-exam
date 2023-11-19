@@ -8,7 +8,7 @@ final class CharacterNetwork: CharacterNetworkProtocol {
         self.networkProvider = networkProvider
     }
         
-    func getCharacters() -> AnyPublisher<ModelDataWrapperDTO<CharacterDTO>, ApiError> {
+    func getCharacters() -> AnyPublisher<ModelDataWrapperDTO<HeroDTO>, ApiError> {
         let params: [String: Any] = [
             "apikey": ApiConfig.apikey,
             "hash": ApiConfig.hash,
@@ -16,8 +16,8 @@ final class CharacterNetwork: CharacterNetworkProtocol {
         ]
         
         return networkProvider.request(
-            of: ModelDataWrapperDTO<CharacterDTO>.self,
-            from: .characters(params: params),
+            of: ModelDataWrapperDTO<HeroDTO>.self,
+            from: .heroes(params: params),
             additionalHeaders: nil
         )
     }
