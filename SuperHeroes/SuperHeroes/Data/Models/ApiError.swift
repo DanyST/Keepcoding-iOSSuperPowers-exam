@@ -9,3 +9,5 @@ enum ApiError: Error {
     case parsingUrl
     case parsingHeaders
 }
+
+extension ApiError: Equatable {}
