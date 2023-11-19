@@ -41,6 +41,8 @@
 		76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */; };
 		76ED94E22B0A7F470092D042 /* HeroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E12B0A7F470092D042 /* HeroRowView.swift */; };
 		76ED94E42B0A85000092D042 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 76ED94E32B0A85000092D042 /* Localizable.xcstrings */; };
+		76ED94E72B0A88E90092D042 /* SerieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E62B0A88E90092D042 /* SerieDTO.swift */; };
+		76ED94EA2B0A8EAA0092D042 /* ApiConfig+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED94E92B0A8EAA0092D042 /* ApiConfig+Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		76ED94DF2B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroesUIPreviewUseCase.swift; sourceTree = "<group>"; };
 		76ED94E12B0A7F470092D042 /* HeroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowView.swift; sourceTree = "<group>"; };
 		76ED94E32B0A85000092D042 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		76ED94E62B0A88E90092D042 /* SerieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieDTO.swift; sourceTree = "<group>"; };
+		76ED94E92B0A8EAA0092D042 /* ApiConfig+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiConfig+Dictionary.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,11 +245,11 @@
 		76ED94B82B09758C0092D042 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				76ED94A72B096EE40092D042 /* ExtensionImage.swift */,
 				76ED949F2B096BB20092D042 /* ModelDataWrapperDTO.swift */,
 				76ED94A12B096EAD0092D042 /* ModelDataContainerDTO.swift */,
 				76ED94A32B096EBD0092D042 /* HeroDTO.swift */,
 				76ED94A52B096ED00092D042 /* ThumbnailImageDTO.swift */,
+				76ED94E62B0A88E90092D042 /* SerieDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -280,6 +284,8 @@
 		76ED94C82B09AC110092D042 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				76ED94E82B0A8E7E0092D042 /* Extensions */,
+				76ED94E52B0A88C20092D042 /* Models */,
 				76ED94C92B09AC150092D042 /* Protocols */,
 			);
 			path = Commons;
@@ -328,6 +334,22 @@
 				76ED94E12B0A7F470092D042 /* HeroRowView.swift */,
 			);
 			path = HeroList;
+			sourceTree = "<group>";
+		};
+		76ED94E52B0A88C20092D042 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94A72B096EE40092D042 /* ExtensionImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76ED94E82B0A8E7E0092D042 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76ED94E92B0A8EAA0092D042 /* ApiConfig+Dictionary.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +496,7 @@
 				76ED94A82B096EE40092D042 /* ExtensionImage.swift in Sources */,
 				76ED94E02B09BC050092D042 /* GetHeroesUIPreviewUseCase.swift in Sources */,
 				76ED94A02B096BB20092D042 /* ModelDataWrapperDTO.swift in Sources */,
+				76ED94EA2B0A8EAA0092D042 /* ApiConfig+Dictionary.swift in Sources */,
 				76ED94DE2B09BBAE0092D042 /* HeroListView.swift in Sources */,
 				76ED94B52B09712C0092D042 /* HTTPMethod.swift in Sources */,
 				76ED94CB2B09AC210092D042 /* ModelDTOToDomainMapper.swift in Sources */,
@@ -482,6 +505,7 @@
 				76ED94C32B09A47C0092D042 /* ModelDataContainer.swift in Sources */,
 				76ED94D52B09B3E60092D042 /* GetHeroesUseCaseProtocol.swift in Sources */,
 				76ED94B72B09714D0092D042 /* ApiError.swift in Sources */,
+				76ED94E72B0A88E90092D042 /* SerieDTO.swift in Sources */,
 				76ED94D92B09B7E80092D042 /* HeroListViewModel.swift in Sources */,
 				76ED94CE2B09B24F0092D042 /* HeroesRepository.swift in Sources */,
 				76ED94D22B09B3C20092D042 /* GetHeroesUseCase.swift in Sources */,
