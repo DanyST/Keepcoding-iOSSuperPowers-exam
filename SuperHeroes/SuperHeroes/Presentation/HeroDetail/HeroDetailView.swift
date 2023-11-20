@@ -25,11 +25,13 @@ struct HeroDetailView: View {
                     }
                     
                     // Content
-                    SerieListView(series: viewModel.series)
+                    SerieListView(series: viewModel.series) { serieSelected, bindingBool in
+                        SerieDetailView(viewModel: viewModel.getSerieDetailViewModel(serie: serieSelected), showDetail: bindingBool)
+                    }
                 }
                 .padding([.leading], 20)
             }
-        }        
+        }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()
         .scrollIndicators(.hidden)
