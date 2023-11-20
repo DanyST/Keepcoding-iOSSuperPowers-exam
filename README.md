@@ -27,9 +27,10 @@ Testing needs to be added to the App's code and a minimum code coverage of 50% s
 
 Layer-to-layer connection with protocols and Combine.
 
-## Testing
-A code coverage of 71% was achieved through testing.
-
 ## Features Solution
 - HeroList
 - HeroDetail
+- SerieDetail
+
+## Preview
+![App preview](ReadmeResources/DemoPreview.gif)
