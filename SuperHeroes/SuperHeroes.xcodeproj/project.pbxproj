@@ -66,6 +66,8 @@
 		76ED95262B0ACF040092D042 /* SerieContainerDTOToDomainMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED95252B0ACF040092D042 /* SerieContainerDTOToDomainMapperTests.swift */; };
 		76ED95282B0ACFB50092D042 /* ThumbnailImageDTOToStringMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED95272B0ACFB50092D042 /* ThumbnailImageDTOToStringMapperTests.swift */; };
 		76ED952C2B0AD2240092D042 /* ApiConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED952B2B0AD2240092D042 /* ApiConfigTests.swift */; };
+		76ED952F2B0AD53C0092D042 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 76ED952E2B0AD53C0092D042 /* ViewInspector */; };
+		76ED95332B0AD6570092D042 /* HeroRowViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED95322B0AD6570092D042 /* HeroRowViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,7 @@
 		76ED95252B0ACF040092D042 /* SerieContainerDTOToDomainMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieContainerDTOToDomainMapperTests.swift; sourceTree = "<group>"; };
 		76ED95272B0ACFB50092D042 /* ThumbnailImageDTOToStringMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImageDTOToStringMapperTests.swift; sourceTree = "<group>"; };
 		76ED952B2B0AD2240092D042 /* ApiConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfigTests.swift; sourceTree = "<group>"; };
+		76ED95322B0AD6570092D042 /* HeroRowViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRowViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76ED952F2B0AD53C0092D042 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,7 @@
 				76ED95292B0AD2140092D042 /* Commons */,
 				76ED950C2B0ABE7B0092D042 /* Data */,
 				76ED951D2B0AC9C20092D042 /* Domain */,
+				76ED95302B0AD54B0092D042 /* Presentation */,
 			);
 			path = SuperHeroesTests;
 			sourceTree = "<group>";
@@ -541,6 +546,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		76ED95302B0AD54B0092D042 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				76ED95312B0AD5B70092D042 /* HeroList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		76ED95312B0AD5B70092D042 /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				76ED95322B0AD6570092D042 /* HeroRowViewTests.swift */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -575,6 +596,9 @@
 				76ED94822B0963690092D042 /* PBXTargetDependency */,
 			);
 			name = SuperHeroesTests;
+			packageProductDependencies = (
+				76ED952E2B0AD53C0092D042 /* ViewInspector */,
+			);
 			productName = SuperHeroesTests;
 			productReference = 76ED94802B0963690092D042 /* SuperHeroesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -631,6 +655,9 @@
 				es,
 			);
 			mainGroup = 76ED94662B0963680092D042;
+			packageReferences = (
+				76ED952D2B0AD53C0092D042 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 76ED94702B0963680092D042 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -727,6 +754,7 @@
 			files = (
 				76ED95212B0ACBB00092D042 /* GetHeroesUseCaseTests.swift in Sources */,
 				76ED95122B0ABF6B0092D042 /* HeroesNetworkMockSuccess.swift in Sources */,
+				76ED95332B0AD6570092D042 /* HeroRowViewTests.swift in Sources */,
 				76ED95262B0ACF040092D042 /* SerieContainerDTOToDomainMapperTests.swift in Sources */,
 				76ED95282B0ACFB50092D042 /* ThumbnailImageDTOToStringMapperTests.swift in Sources */,
 				76ED950F2B0ABEAB0092D042 /* HeroesRepositoryTests.swift in Sources */,
@@ -1078,6 +1106,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76ED952D2B0AD53C0092D042 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76ED952E2B0AD53C0092D042 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76ED952D2B0AD53C0092D042 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76ED94672B0963680092D042 /* Project object */;
 }
