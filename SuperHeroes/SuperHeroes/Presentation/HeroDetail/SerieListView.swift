@@ -1,7 +1,15 @@
 import SwiftUI
 
-struct SerieListView: View {
+struct SerieListView<Content: View>: View {
     var series: [Serie]
+    @State var serieSelected: Serie?
+    @State var showDetail = false
+    var detailContent: (Serie, Binding<Bool>) -> Content
+    
+    init(series: [Serie], @ViewBuilder detailContent: @escaping (Serie, Binding<Bool>) -> Content) {
+        self.series = series
+        self.detailContent = detailContent
+    }
     
     var body: some View {
         if !series.isEmpty {
@@ -21,8 +29,21 @@ struct SerieListView: View {
                         ForEach(series) { serie in
                             SerieRowView(serie: serie)
                                 .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.width * 0.8)
+                                .onTapGesture {
+                                    serieSelected = serie
+                                }
                         }
                     }
+                }
+            }
+            .sheet(isPresented: $showDetail, content: {
+                if let serieSelected {
+                    detailContent(serieSelected, $showDetail)
+                }
+            })
+            .onChange(of: serieSelected) { oldValue, newValue in
+                if newValue != nil {
+                    showDetail = true
                 }
             }
         } else {
@@ -37,7 +58,7 @@ struct SerieListView: View {
 }
 
 #Preview {
-    SerieListView(series: [
+    let series = [
         Serie(
             id: UUID().uuidString,
             title: "Captain America (2004 - 2011)",
@@ -60,5 +81,9 @@ struct SerieListView: View {
             modified: "-0001-11-30T00:00:00-0500",
             thumbnail: "https://i.annihil.us/u/prod/marvel/i/mg/4/10/4bc357760939f.jpg"
         )
-    ])
+    ]
+    
+    return SerieListView(series: series) { _, binding in
+        SerieDetailView(viewModel: SerieDetailViewModel(serie: series[0]), showDetail: binding)
+    }
 }
