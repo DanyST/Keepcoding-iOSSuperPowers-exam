@@ -34,3 +34,16 @@ Layer-to-layer connection with protocols and Combine.
 
 ## Preview
 ![App preview](ReadmeResources/DemoPreview.gif)
+
+
+# Installation
+
+To run the project, you need to obtain the authorization data from the [Marvel API](https://developer.marvel.com/documentation/authorization). These are **hash**, **apikey**, and **ts**.
+
+Once you obtain these data, add them to the **ApiConfig** file in the project.
+
+<img width="350" src="ReadmeResources/ApiConfigDemo.png">
+
+For convenience, you can search for it with keyboard shortcut **CMD + Shift + O**.
+
+#### Great! You can now run the project and test the application :)
