@@ -13,3 +13,4 @@ struct Serie {
 }
 
 extension Serie: Identifiable {}
+extension Serie: Equatable {}
