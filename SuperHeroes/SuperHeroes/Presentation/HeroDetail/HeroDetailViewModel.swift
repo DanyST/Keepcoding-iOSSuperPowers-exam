@@ -33,4 +33,8 @@ final class HeroDetailViewModel: ObservableObject {
             }
             .store(in: &suscriptors)
     }
+    
+    func getSerieDetailViewModel(serie: Serie) -> SerieDetailViewModel {
+        SerieDetailViewModel(serie: serie)
+    }
 }
