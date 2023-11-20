@@ -6,3 +6,5 @@ enum Status {
     case loaded
     case error(error: String?)
 }
+
+extension Status: Equatable {}
