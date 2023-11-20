@@ -22,12 +22,14 @@ struct HeroRowView: View {
                     .frame(maxWidth: .infinity)
                     .cornerRadius(cornerRadius)
             }
+            .id(0)
             
             Rectangle()
                 .frame(maxWidth: .infinity)
                 .background(.black)
                 .opacity(0.15)
                 .cornerRadius(cornerRadius)
+                .id(1)
             
             VStack {
                 Spacer()
@@ -36,6 +38,7 @@ struct HeroRowView: View {
                     .bold()
                     .foregroundStyle(Color.white)
                     .padding()
+                    .id(2)
             }
         }
     }
